@@ -13,7 +13,14 @@ export default {
   components: { },
   mounted() {
     // your code goes here
+    let d = await d3.csv("https://corgis-edu.github.io/corgis/datasets/csv/cars/cars.csv")
+    console.log(d);
+    //console.log(d.getElementById("Engine Information.Engine Statistics.Horsepower"));
+    let horsepower = d.map(value => value["Engine Information.Engine Statistics.Horsepower"])
+    let fuel = d.map(value => value["Fuel Information.City mpg"])
 
+    console.log(horsepower)
+    console.log(fuel)
   }
 }
 </script>
