@@ -13,7 +13,7 @@ export default {
   components: { },
   mounted() {
     // your code goes here
-    // d3.select('#container').style("border", "5px solid gray" )
+
   }
 }
 </script>
